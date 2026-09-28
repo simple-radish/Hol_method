@@ -1,0 +1,1 @@
+int Solve_H(int size, double **matr, double *b, double *x);
