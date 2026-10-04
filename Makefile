@@ -2,7 +2,7 @@ all:
 	g++ main.cpp func.cpp input.cpp solution.cpp -o a.out
 run_1: all
 	@echo "рабочая сборка"
-	./a.out 3 2 0 input.txt
+	./a.out 3 3 0 input.txt
 run_2: all
 	./a.out 2000 6 1
 run_3: all
@@ -11,9 +11,13 @@ run_4: all
 	./a.out 2000 6 2
 run_5: all
 	./a.out 1000 6 4
-test: all
-	
+run_6: all
+	@echo "малые изменения - матрица неположительно определенная"
+	./a.out 3 3 0 input_broken.txt
 
+
+
+test: all
 	@echo "аргументы"
 	@echo "нет аргументов"
 	-./a.out
